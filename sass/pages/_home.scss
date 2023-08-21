@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  padding: 20rem 20rem;
+
+  &-content {
+    width: 30%;
+
+    &__text {
+    }
+
+    &__first {
+      font-family: "Barlow Condensed";
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      display: block;
+      letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
+      color: $color-secondary;
+    }
+
+    &__space {
+      font-family: "Bellefair";
+      font-size: 15rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    &__second {
+      font-family: "Barlow Condensed";
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 2.9rem;
+      color: $color-secondary;
+    }
+  }
+}

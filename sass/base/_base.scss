@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: $color-white;
+  min-height: 100vh;
+}
+
+::selection {
+  color: $color-primary;
+  background: $color-secondary;
+}
+
+*:link,
+*:visited {
+  text-decoration: none;
+  color: $color-secondary;
+}
